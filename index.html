@@ -1,38 +1,90 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>One Line A Day</title>
-        <link href="https://fonts.googleapis.com/css?family=Lato|Satisfy&display=swap" rel="stylesheet">
-    </head>
-    <body>
+    <title>One Line A Day</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background">
         <nav>
-            <h1>One Line A Day</h1>
-            <button>Sign In</button>
-            <button>Sign Up</button>
+          <img src="img/OLaD_Logo.png" alt="Person experiencing life fully." />
+          <div class="signInUp">
+            <button><a href="/team.html">Sign In<a></button>
+            <button><a href="/team.html">Sign Up<a></button>
+          </div>
         </nav>
         <header>
-                <img src="/img/headerBackground.jpg" alt="Person experiencing life fully.">
-                <h2>Ready for a way to record life's best moments tht doesn't interfere with living?</h2>
-                <button>Join Us</button>
+          <h2>
+            Ready for a way to record life's best moments that doesn't interfere
+            with living?
+          </h2>
+          <button><a href="/team.html">Join Us</a></button>
         </header>
+      </div>
+      <div class="whatIsOLaD">
+        <h2>What <strong id="is">is</strong> One Line A Day?</h2>
         <div>
-            <h2>What <strong> is</strong> One Line A Day?</h2>
-            <p>This is the app version of the 10 year one line a day journal. Your daily entries for each day over 10 years are recorded, and you are reminded each day to record a short and sweet fact from your day- a funny quote, crazy milestone, or what you ate for dinner.</p>
+          <p>
+            This is the app version of the 10 year one line a day journal. Your
+            daily entries for each day over 10 years are recorded, and you are
+            reminded each day to record a short and sweet fact from your day- a
+            funny quote, crazy milestone, or what you ate for dinner.
+          </p>
+          <div class="UX">
+          <img
+            src="img/sample2.png"
+            alt="Image of Sign In page within app."
+          />
+          <img
+            src="img/sample.png"
+            alt="Image of journal page layout within app."
+          />
         </div>
-        <div>
-            <h2>One Line A Day is your everyday journal.</h2>
+          
+        </div>
+      </div>
+      <div class="everyday">
+        <h2>
+          One Line A Day is <strong id="your">your</strong> everyday journal.
+        </h2>
+        <div class="feature">
+          <div class="box">
             <h3>Private</h3>
+            <img
+              src="img/private.png"
+              alt="Cartoon person with locked phone."
+            />
+          </div>
+          <div class="box">
             <h3>Portable</h3>
+            <img
+              src="img/portable.png"
+              alt="Cartoon person outside with device."
+            />
+          </div>
+          <div class="box">
             <h3>Infinite entries</h3>
+            <img
+              src="img/infiniteEntries.png"
+              alt="Cartoon person adding content."
+            />
+          </div>
         </div>
-        <div>
-            <button href="team.html">Meet the Build Team</button>
-        </div>
-
-    </body>
-    <footer>
-        <h6>Photos from Unsplash</h6>
-    </footer>
+      </div>
+    </div>
+  </body>
+  <footer>
+        <button><a href="/team.html">Join Us</a></button>
+    <h4>Photos from <a href="https://unsplash.com/">Unsplash</a></h4>
+    <button id="meet"><a href="/team.html">Meet the Build Team</a></button>
+  </footer>
+</html>

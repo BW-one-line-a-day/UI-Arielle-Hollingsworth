@@ -1,0 +1,36 @@
+.flex(@direction, @justify, @items, @content) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @items;
+  align-content: @content;
+}
+
+.btn-mixin {
+  background-color: @button;
+  //color: @font;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  border: 1.2px solid @font;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 120px;
+
+  &:hover {
+    background-color: @hover;
+  }
+  &:active {
+    background-color: @active;
+  }
+}
+
+//for a tags in buttons
+.a-mixin {
+  color: @font;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}

@@ -1,0 +1,74 @@
+
+.background{
+    background-image: url("/img/headerBackground.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    //opacity: 0.5;
+    //filter: opacity(50%);
+
+    header {
+        .flex(column, center, center, flex-start);
+        h2{
+            max-width: 50%;
+            padding: 10px;
+        }
+    }
+    button{
+        margin: 10px;
+        .btn-mixin;
+        a{
+            .a-mixin;
+        }
+    }
+}
+
+.whatIsOLaD{
+    .flex(column, center, center, center);
+    padding: 20px 10px 10px 10px;
+
+    h2{
+        margin: 0 auto;
+    }
+
+    div{
+        .flex(column, center, center, center);
+        p{
+            max-width: 70%;
+        }
+        .UX{
+            .flex(row, center, center, center);
+            img{
+                max-width: 30%;
+                padding: 10px;
+            }
+        }
+        img{
+            max-width: 60%;
+        }
+    }
+}
+
+.everyday{
+    .flex(column, center, center, center);
+    #your{
+        text-decoration: underline;
+        color: @purple3;
+    }
+
+    .feature{
+     .flex(row, center, center, center);
+     .box{
+        .flex(column, center, center, center);
+        margin: 15px;
+        padding: 10px;
+        border: 2px solid @purple3;
+        border-radius: 8px;
+        h3{
+           margin: 0 auto; 
+        }
+     }
+    }
+}
+
+

@@ -1,0 +1,263 @@
+.btn-mixin {
+  background-color: #0098b8;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  border: 1.2px solid #444347;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 120px;
+}
+.btn-mixin:hover {
+  background-color: #80c9db;
+}
+.btn-mixin:active {
+  background-color: #d6bee0;
+}
+.a-mixin {
+  color: #444347;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: #444347;
+}
+h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 5.6rem;
+}
+h2 {
+  font-family: 'Satisfy', cursive;
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.4rem;
+  font-family: 'Satisfy', cursive;
+}
+h4 {
+  font-size: 1.4rem;
+  font-family: 'Lato', sans-serif;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-family: 'Lato', sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+nav img {
+  max-width: 45%;
+  padding: 15px;
+}
+nav .signInUp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 40%;
+  padding: 10px;
+}
+nav button {
+  background-color: #0098b8;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  border: 1.2px solid #444347;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 120px;
+}
+nav button:hover {
+  background-color: #80c9db;
+}
+nav button:active {
+  background-color: #d6bee0;
+}
+nav button a {
+  color: #444347;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: #80c9db;
+  border-top: 2px solid #006e85;
+}
+footer button {
+  background-color: #0098b8;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  border: 1.2px solid #444347;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+footer button:hover {
+  background-color: #80c9db;
+}
+footer button:active {
+  background-color: #d6bee0;
+}
+footer #meet {
+  width: 200px;
+}
+footer a {
+  color: #444347;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+.background {
+  background-image: url("/img/headerBackground.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.background header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+.background header h2 {
+  max-width: 50%;
+  padding: 10px;
+}
+.background button {
+  margin: 10px;
+  background-color: #0098b8;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  border: 1.2px solid #444347;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 120px;
+}
+.background button:hover {
+  background-color: #80c9db;
+}
+.background button:active {
+  background-color: #d6bee0;
+}
+.background button a {
+  color: #444347;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+.whatIsOLaD {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px 10px 10px 10px;
+}
+.whatIsOLaD h2 {
+  margin: 0 auto;
+}
+.whatIsOLaD div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.whatIsOLaD div p {
+  max-width: 70%;
+}
+.whatIsOLaD div .UX {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.whatIsOLaD div .UX img {
+  max-width: 30%;
+  padding: 10px;
+}
+.whatIsOLaD div img {
+  max-width: 60%;
+}
+.everyday {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.everyday #your {
+  text-decoration: underline;
+  color: #ab7ec4;
+}
+.everyday .feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.everyday .feature .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 15px;
+  padding: 10px;
+  border: 2px solid #ab7ec4;
+  border-radius: 8px;
+}
+.everyday .feature .box h3 {
+  margin: 0 auto;
+}
