@@ -532,7 +532,7 @@ header button a {
   font-size: 1.4rem;
   padding: 0;
 }
-.team {
+.teamPage .team {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -542,36 +542,44 @@ header button a {
   flex-wrap: wrap;
 }
 @media (max-width:500px) {
-  .team {
+  .teamPage .team {
     flex-direction: column;
     align-items: center;
   }
 }
-.team .member {
+.teamPage .team a {
+  text-decoration: none;
+}
+.teamPage .team .member {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   align-content: space-around;
   background-color: #efeef5;
-  width: 45%;
+  width: 300px;
+  height: 370px;
   border: 2px solid #006e85;
   margin: 10px;
   border-radius: 8px;
   padding: 10px;
 }
-.team .member h2 {
+.teamPage .team .member div.a:hover {
+  cursor: pointer;
+}
+.teamPage .team .member h2 {
   text-align: center;
   margin: 5px auto;
   text-decoration: underline;
   flex-wrap: wrap;
 }
-.team .member h3 {
+.teamPage .team .member h3 {
   margin: 5px auto;
   text-align: center;
+  text-decoration: none;
   color: #006e85;
 }
-.team .member img {
+.teamPage .team .member img {
   width: 222px;
   height: 222px;
   object-fit: cover;
