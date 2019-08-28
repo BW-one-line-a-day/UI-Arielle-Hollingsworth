@@ -1,22 +1,24 @@
 nav {
-  .flex(row, space-between, center, center);
+  .flex(row, space-around, center, center);
   @media @mobile {
     justify-content: center;
   }
   //logo
   img {
-    max-width: 45%;
+    max-width: 40%;
     padding: 15px;
   }
+  //div for buttons
   .signInUp {
-    .flex(row, space-between, center, center);
-    width: 40%;
+    .flex(row, flex-end, flex-end, center);
+    //width: 40%;
     padding: 10px;
     @media @mobile {
       display: none;
     }
   }
   button {
+    .flex(row, center, center, center);
     .btn-mixin;
     a {
       .a-mixin;

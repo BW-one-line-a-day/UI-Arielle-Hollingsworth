@@ -5,27 +5,25 @@
   background-repeat: no-repeat;
   //opacity: 0.5;
   //filter: opacity(50%);
+}
+header {
+  .flex(column, space-between, center, center);
+  width: 100%;
+  height: auto;
 
-  header {
-    .flex(column, space-between, stretch, center);
-    width: 100%;
-    height: auto;
-    
-    h2 {
-      max-width: 50%;
-      padding: 10px;
-      margin: 0 auto;
-    }
-    button {
-        margin: 10px;
-        .btn-mixin;
-        margin: 0 auto;
-        a {
-          .a-mixin;
-        }
-      }
+  h2 {
+    //max-width: 80%;
+    padding: 10px;
+    margin: 0 auto;
   }
-  
+  button {
+    margin: 10px;
+    .btn-mixin;
+    //margin: 0 auto;
+    a {
+      .a-mixin;
+    }
+  }
 }
 
 .whatIsOLaD {
@@ -48,10 +46,9 @@
         padding: 20px;
       }
       #signInUX {
-          @media @mobile{
-            display: none;
-          }
-          
+        @media @mobile {
+          display: none;
+        }
       }
     }
     img {
@@ -69,8 +66,8 @@
 
   .feature {
     .flex(row, center, center, center);
-    @media @mobile{
-        flex-direction: column;
+    @media @mobile {
+      flex-direction: column;
     }
     .box {
       .flex(column, center, center, center);
@@ -87,26 +84,31 @@
 
 //*******  Stying for About Team Page  **********
 .teamPage {
-  background-color: @grey2;
-
   //header style
   header {
     .flex(row, space-evenly, center, flex-start);
-    border-bottom: 1.5px solid @grey6;
+    border-bottom: 2px solid @turq4;
     text-align: center;
-    @media @mobile{
-        flex-direction:column;
+    background-color: @turq1;
+    max-width: 100%;
+    @media @mobile {
+      flex-direction: column;
     }
     h1 {
       text-align: center;
     }
     .lambda {
       .flex(column, center, center, flex-start);
-      width: 25%;
-      height: 25%;
+      background-color: @grey2;
+      width: 200px;
+      height: 150px;
       border: 1px solid @grey6;
       border-radius: 8px;
-      
+      margin: 15px;
+      @media @mobile{
+        font-size: 1.2rem;
+      }
+
       img {
         width: 5rem;
       }
@@ -121,12 +123,13 @@
   .team {
     .flex(row, flex-start, stretch, stretch);
     flex-wrap: wrap;
-    @media @mobile{
-        flex-direction: column;
-        align-items: center;
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
     }
     .member {
       .flex(column, space-around, center, space-around);
+      background-color: @grey2;
       width: 45%;
       border: 1px solid @grey6;
       margin: 10px;

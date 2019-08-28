@@ -7,9 +7,9 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  padding: 10px;
-  margin: 10px;
-  width: 120px;
+  padding: 5px;
+  margin: 20px;
+  width: 100px;
 }
 .btn-mixin:hover {
   background-color: #80c9db;
@@ -206,7 +206,7 @@ img {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
 }
@@ -216,16 +216,15 @@ nav {
   }
 }
 nav img {
-  max-width: 45%;
+  max-width: 40%;
   padding: 15px;
 }
 nav .signInUp {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   align-content: center;
-  width: 40%;
   padding: 10px;
 }
 @media (max-width:500px) {
@@ -234,6 +233,11 @@ nav .signInUp {
   }
 }
 nav button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   background-color: #0098b8;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
@@ -242,9 +246,9 @@ nav button {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  padding: 10px;
-  margin: 10px;
-  width: 120px;
+  padding: 5px;
+  margin: 20px;
+  width: 100px;
 }
 nav button:hover {
   background-color: #80c9db;
@@ -284,9 +288,9 @@ footer button {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  padding: 10px;
-  margin: 10px;
-  width: 120px;
+  padding: 5px;
+  margin: 20px;
+  width: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -310,9 +314,9 @@ footer #back {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  padding: 10px;
-  margin: 10px;
-  width: 120px;
+  padding: 5px;
+  margin: 20px;
+  width: 100px;
   width: 200px;
 }
 footer #meet:hover,
@@ -335,21 +339,21 @@ footer a {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.background header {
+header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   align-content: center;
   width: 100%;
   height: auto;
 }
-.background header h2 {
-  max-width: 50%;
+header h2 {
   padding: 10px;
   margin: 0 auto;
 }
-.background header button {
+header button {
+  margin: 10px;
   background-color: #0098b8;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
@@ -358,18 +362,17 @@ footer a {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  padding: 10px;
-  margin: 10px;
-  width: 120px;
-  margin: 0 auto;
+  padding: 5px;
+  margin: 20px;
+  width: 100px;
 }
-.background header button:hover {
+header button:hover {
   background-color: #80c9db;
 }
-.background header button:active {
+header button:active {
   background-color: #d6bee0;
 }
-.background header button a {
+header button a {
   color: #444347;
   font-family: "Lato", sans-serif;
   text-align: center;
@@ -452,17 +455,16 @@ footer a {
 .everyday .feature .box h3 {
   margin: 0 auto;
 }
-.teamPage {
-  background-color: #e0dfe6;
-}
 .teamPage header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   align-content: flex-start;
-  border-bottom: 1.5px solid #444347;
+  border-bottom: 2px solid #006e85;
   text-align: center;
+  background-color: #bfe6ed;
+  max-width: 100%;
 }
 @media (max-width:500px) {
   .teamPage header {
@@ -478,10 +480,17 @@ footer a {
   justify-content: center;
   align-items: center;
   align-content: flex-start;
-  width: 25%;
-  height: 25%;
+  background-color: #e0dfe6;
+  width: 200px;
+  height: 150px;
   border: 1px solid #444347;
   border-radius: 8px;
+  margin: 15px;
+}
+@media (max-width:500px) {
+  .teamPage header .lambda {
+    font-size: 1.2rem;
+  }
 }
 .teamPage header .lambda img {
   width: 5rem;
@@ -510,6 +519,7 @@ footer a {
   justify-content: space-around;
   align-items: center;
   align-content: space-around;
+  background-color: #e0dfe6;
   width: 45%;
   border: 1px solid #444347;
   margin: 10px;
