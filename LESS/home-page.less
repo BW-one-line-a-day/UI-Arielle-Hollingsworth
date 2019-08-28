@@ -1,74 +1,153 @@
+.background {
+  background-image: url("/img/headerBackground.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  //opacity: 0.5;
+  //filter: opacity(50%);
 
-.background{
-    background-image: url("/img/headerBackground.jpg");
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    //opacity: 0.5;
-    //filter: opacity(50%);
-
-    header {
-        .flex(column, center, center, flex-start);
-        h2{
-            max-width: 50%;
-            padding: 10px;
-        }
+  header {
+    .flex(column, space-between, stretch, center);
+    width: 100%;
+    height: auto;
+    
+    h2 {
+      max-width: 50%;
+      padding: 10px;
+      margin: 0 auto;
     }
-    button{
+    button {
         margin: 10px;
         .btn-mixin;
-        a{
-            .a-mixin;
-        }
-    }
-}
-
-.whatIsOLaD{
-    .flex(column, center, center, center);
-    padding: 20px 10px 10px 10px;
-
-    h2{
         margin: 0 auto;
-    }
-
-    div{
-        .flex(column, center, center, center);
-        p{
-            max-width: 70%;
+        a {
+          .a-mixin;
         }
-        .UX{
-            .flex(row, center, center, center);
-            img{
-                max-width: 30%;
-                padding: 10px;
-            }
-        }
-        img{
-            max-width: 60%;
-        }
-    }
+      }
+  }
+  
 }
 
-.everyday{
+.whatIsOLaD {
+  .flex(column, center, center, center);
+  padding: 20px 10px 10px 10px;
+
+  h2 {
+    margin: 0 auto;
+  }
+
+  div {
     .flex(column, center, center, center);
-    #your{
-        text-decoration: underline;
-        color: @purple3;
+    p {
+      max-width: 70%;
     }
-
-    .feature{
-     .flex(row, center, center, center);
-     .box{
-        .flex(column, center, center, center);
-        margin: 15px;
-        padding: 10px;
-        border: 2px solid @purple3;
-        border-radius: 8px;
-        h3{
-           margin: 0 auto; 
-        }
-     }
+    .UX {
+      .flex(row, center, center, center);
+      img {
+        width: 45%;
+        padding: 20px;
+      }
+      #signInUX {
+          @media @mobile{
+            display: none;
+          }
+          
+      }
     }
+    img {
+      max-width: 60%;
+    }
+  }
 }
 
+.everyday {
+  .flex(column, center, center, center);
+  #your {
+    text-decoration: underline;
+    color: @purple3;
+  }
 
+  .feature {
+    .flex(row, center, center, center);
+    @media @mobile{
+        flex-direction: column;
+    }
+    .box {
+      .flex(column, center, center, center);
+      margin: 15px;
+      padding: 10px;
+      border: 2px solid @purple3;
+      border-radius: 8px;
+      h3 {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+//*******  Stying for About Team Page  **********
+.teamPage {
+  background-color: @grey2;
+
+  //header style
+  header {
+    .flex(row, space-evenly, center, flex-start);
+    border-bottom: 1.5px solid @grey6;
+    text-align: center;
+    @media @mobile{
+        flex-direction:column;
+    }
+    h1 {
+      text-align: center;
+    }
+    .lambda {
+      .flex(column, center, center, flex-start);
+      width: 25%;
+      height: 25%;
+      border: 1px solid @grey6;
+      border-radius: 8px;
+      
+      img {
+        width: 5rem;
+      }
+      h2 {
+        font-family: "Lato", sans-serif;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  //member box stying
+  .team {
+    .flex(row, flex-start, stretch, stretch);
+    flex-wrap: wrap;
+    @media @mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+    .member {
+      .flex(column, space-around, center, space-around);
+      width: 45%;
+      border: 1px solid @grey6;
+      margin: 10px;
+      border-radius: 8px;
+      padding: 10px;
+
+      h2 {
+        text-align: center;
+        margin: 5px auto;
+        text-decoration: underline;
+        flex-wrap: wrap;
+      }
+      h3 {
+        margin: 5px auto;
+        text-align: center;
+      }
+      img {
+        width: 222px;
+        height: 222px;
+        object-fit: cover;
+      }
+    }
+  }
+}

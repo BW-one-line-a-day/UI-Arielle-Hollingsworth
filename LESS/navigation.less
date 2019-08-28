@@ -1,19 +1,25 @@
 nav {
-.flex(row, space-between, center, center);
-    //logo
-    img{
-     max-width: 45%;
-     padding: 15px;
+  .flex(row, space-between, center, center);
+  @media @mobile {
+    justify-content: center;
+  }
+  //logo
+  img {
+    max-width: 45%;
+    padding: 15px;
+  }
+  .signInUp {
+    .flex(row, space-between, center, center);
+    width: 40%;
+    padding: 10px;
+    @media @mobile {
+      display: none;
     }
-    .signInUp{
-        .flex(row, space-between, center, center);
-        width: 40%;
-        padding:10px;
-    }
-button{
+  }
+  button {
     .btn-mixin;
-    a{
-    .a-mixin;
+    a {
+      .a-mixin;
     }
-}
+  }
 }

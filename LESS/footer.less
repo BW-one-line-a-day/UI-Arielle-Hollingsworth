@@ -1,17 +1,27 @@
 footer {
-    .flex(row, space-around, center, center);
-    background-color: @turq2;
-    border-top: 2px solid @turq4;
+  .flex(row, space-around, center, center);
+  background-color: @turq2;
+  border-top: 2px solid @turq4;
+  @media @mobile{
+      flex-direction: column;
+      h4{
+          display: none;
+      }
+  }
 
   button {
     .btn-mixin;
     .flex(row, space-around, center, center);
     flex-wrap: wrap;
   }
-  #meet{
-        width: 200px;
-    }
-    a {
-        .a-mixin;
-      }
+
+  //styes for buttons with longer text
+  #meet,
+  #back {
+    .btn-mixin;
+    width: 200px;
+  }
+  a {
+    .a-mixin;
+  }
 }
