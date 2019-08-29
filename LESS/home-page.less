@@ -1,0 +1,187 @@
+.background {
+  background-image: url("/img/headerBackground.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  @media @mobile {
+    background-image: url("/img/headerBackgroundMini.jpg");
+  }
+}
+header {
+  .flex(column, space-between, center, center);
+  width: 100%;
+  height: auto;
+
+  h2 {
+    //max-width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 3.5rem;
+  }
+  button {
+    margin: 10px;
+    .btn-mixin;
+    a {
+      .a-mixin;
+    }
+  }
+}
+
+.whatIsOLaD {
+  .flex(column, center, center, center);
+  padding: 40px 10px;
+
+  h2 {
+    margin: 10px auto;
+  }
+
+  div {
+    .flex(column, center, center, center);
+    p {
+      max-width: 70%;
+    }
+    .UX {
+      .flex(row, center, center, center);
+      img {
+        width: 45%;
+        padding: 20px;
+      }
+      #signInUX {
+        @media @mobile {
+          display: none;
+        }
+      }
+    }
+    img {
+      max-width: 60%;
+    }
+  }
+}
+
+.everyday {
+  .flex(column, center, center, center);
+  h2 {
+    padding: 10px;
+  }
+  #your {
+    text-decoration: underline;
+    color: @purple3;
+  }
+
+  .feature {
+    .flex(row, center, center, center);
+    @media @mobile {
+      flex-direction: column;
+    }
+    .box {
+      .flex(column, center, center, center);
+      margin: 15px;
+      padding: 10px;
+      border: 2px solid @purple3;
+      border-radius: 8px;
+      h3 {
+        margin: 0 auto;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+//*******  Stying for About Team Page  **********
+.teamPage {
+  background-color: @grey2;
+  //header style
+  header {
+    .flex(row, space-evenly, center, flex-start);
+    border-bottom: 2px solid @turq4;
+    text-align: center;
+    background-image: url("/img/teamBackground.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    @media @mobile {
+      background-image: url("/img/teamBackgroundMini.jpg");
+    }
+    @media @mobile {
+      flex-direction: column;
+    }
+    h1 {
+      color: @turq4;
+      text-align: center;
+      background-color: @grey1;
+      border-radius: 8px;
+      border: 1px solid @grey6;
+      padding: 15px;
+      margin: 20px auto;
+      @media @mobile {
+        font-size: 3.5rem;
+      }
+    }
+    .lambda {
+      .flex(column, center, center, flex-start);
+      background-color: @grey1;
+      border: 1px solid @grey6;
+      border-radius: 8px;
+      width: 160px;
+      height: 175px;
+      margin: 15px;
+    }
+
+    img {
+      width: 5rem;
+    }
+    h2 {
+      color: @turq4;
+      font-family: "Lato", sans-serif;
+      font-size: 1.4rem;
+      padding: 0;
+    }
+  }
+
+  //member box stying
+  .team {
+    margin-top: 30px;
+    .flex(row, space-around, stretch, stretch);
+    flex-wrap: wrap;
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    .member {
+      .flex(column, space-around, center, space-around);
+      background-color: @grey1;
+      width: 300px;
+      height: 370px;
+      border: 2px solid @turq4;
+      margin: 10px;
+      border-radius: 8px;
+      padding: 10px;
+
+      div.a:hover{
+        cursor: pointer;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 5px auto;
+        text-decoration: underline;
+        flex-wrap: wrap;
+      }
+      h3 {
+        margin: 5px auto;
+        text-align: center;
+        text-decoration: none;
+        color: @turq4;
+      }
+      img {
+        width: 222px;
+        height: 222px;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    //border:1px solid @purple3;
+  }
+  
+  html {
+    font-size: 62.5%; //1rem = 10px
+  }
+  
+  // html, body {
+  
+  // }
+  
+  h1, h2, h3, h4, h5, p {
+    color: @font;
+    text-align: center;
+  }
+  //font-family: 'Satisfy', cursive;
+//font-family: 'Lato', sans-serif;
+  
+  h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 5.6rem;//56px
+  }
+  
+  h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 2.8rem;//28px
+  }
+  
+  h3 {
+    font-size: 2.4rem;
+    font-family: 'Satisfy', cursive;
+  }
+  h4 {
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  p {
+    line-height: 1.5;
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container, .teamPage {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @mobile{
+      max-width: 500px;
+    }
+  }
+  

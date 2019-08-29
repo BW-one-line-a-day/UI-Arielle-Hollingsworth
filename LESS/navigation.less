@@ -1,0 +1,30 @@
+nav {
+  .flex(row, space-around, center, center);
+  width: 100%;
+  @media @mobile {
+    justify-content: center;
+  }
+  //logo
+  img {
+    max-width: 30rem;
+    margin: 20px auto;
+  }
+  //div for buttons
+  .signInUp {
+    .flex(row, flex-end, center, center);
+    width: 65%;
+    //padding: 10px;
+    @media @mobile {
+      display: none;
+    }
+
+    button {
+      //.flex(row, center, center, center);
+      .btn-mixin;
+      a {
+        .a-mixin;
+      }
+    }
+  }
+  
+}
