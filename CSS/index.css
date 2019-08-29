@@ -217,8 +217,8 @@ nav {
   }
 }
 nav img {
-  max-width: 30rem;
-  margin: 20px auto;
+  max-width: 25rem;
+  margin: 20px;
 }
 nav .signInUp {
   display: flex;
@@ -245,6 +245,7 @@ nav .signInUp button {
   padding: 5px;
   margin: 20px;
   width: 100px;
+  margin: 10px;
 }
 nav .signInUp button:hover {
   background-color: #80c9db;
@@ -359,9 +360,16 @@ header {
   height: auto;
 }
 header h2 {
+  max-width: 80%;
   padding: 10px;
   margin: 20px auto;
   font-size: 3.5rem;
+}
+@media (max-width:500px) {
+  header h2 {
+    font-size: 2.8rem;
+    margin: 0 auto;
+  }
 }
 header button {
   margin: 10px;
@@ -476,7 +484,7 @@ header button a {
 .teamPage header {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   align-content: flex-start;
   border-bottom: 2px solid #006e85;
@@ -524,13 +532,20 @@ header button a {
   margin: 15px;
 }
 .teamPage header img {
-  width: 5rem;
+  width: 3rem;
+}
+@media (max-width:500px) {
+  .teamPage header img {
+    padding: 5px;
+    object-fit: scale-down;
+  }
 }
 .teamPage header h2 {
   color: #006e85;
   font-family: "Lato", sans-serif;
   font-size: 1.4rem;
   padding: 0;
+  margin: 5px;
 }
 .teamPage .team {
   margin-top: 30px;

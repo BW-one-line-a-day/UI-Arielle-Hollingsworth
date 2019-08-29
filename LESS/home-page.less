@@ -13,11 +13,16 @@ header {
   height: auto;
 
   h2 {
-    //max-width: 80%;
+    max-width: 80%;
     padding: 10px;
     margin: 20px auto;
     font-size: 3.5rem;
+    @media @mobile{
+      font-size: 2.8rem;
+      margin: 0 auto;
+    }
   }
+
   button {
     margin: 10px;
     .btn-mixin;
@@ -40,6 +45,8 @@ header {
     p {
       max-width: 70%;
     }
+
+    //for user experience images
     .UX {
       .flex(row, center, center, center);
       img {
@@ -92,7 +99,7 @@ header {
   background-color: @grey2;
   //header style
   header {
-    .flex(row, space-evenly, center, flex-start);
+    .flex(row, space-around, center, flex-start);
     border-bottom: 2px solid @turq4;
     text-align: center;
     background-image: url("/img/teamBackground.jpg");
@@ -117,6 +124,8 @@ header {
         font-size: 3.5rem;
       }
     }
+
+    //style for 'made at Lambda' box
     .lambda {
       .flex(column, center, center, flex-start);
       background-color: @grey1;
@@ -128,13 +137,18 @@ header {
     }
 
     img {
-      width: 5rem;
+      width: 3rem;
+      @media @mobile{
+        padding: 5px;
+        object-fit: scale-down;
+      }
     }
     h2 {
       color: @turq4;
       font-family: "Lato", sans-serif;
       font-size: 1.4rem;
       padding: 0;
+      margin: 5px;
     }
   }
 
