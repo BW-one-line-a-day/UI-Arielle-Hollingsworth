@@ -4,23 +4,22 @@ nav {
   @media @mobile {
     justify-content: center;
   }
-  //logo
+  //OLaD logo
   img {
-    max-width: 30rem;
-    margin: 20px auto;
+    max-width: 25rem;
+    margin: 20px;
   }
-  //div for buttons
+  //div wrapper for buttons
   .signInUp {
     .flex(row, flex-end, center, center);
     width: 65%;
-    //padding: 10px;
     @media @mobile {
       display: none;
     }
 
     button {
-      //.flex(row, center, center, center);
       .btn-mixin;
+      margin: 10px;
       a {
         .a-mixin;
       }
